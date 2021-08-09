@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+.logo-text{
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+.big-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  color: #7ca5c0;
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.slider {
+  background: #a1a4a9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+  color: #7ca5c0;
+  font-family: "Heebo", sans-serif;
+  font-size: 5rem;
+}
+
+.intro-text h4{
+  font-size: 3rem;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 500;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 3px solid #455d6d;
+}
+
+.logo {
+  color: #7ca5c0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #7ca5c0;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #7ca5c0;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+  .logo-text{
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bigTextFade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.card-container{
+  position: relative;
+  width: 1400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card-container .card{
+  position: relative;
+  max-width: 300px;
+  height: 250px;
+  background: white;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card-container .card:hover{
+  height: 420px;
+}
+
+.card-container .card .imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-container .card .imgBxCircle{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 200px;
+}
+
+.card-container .card .imgBxPetClinic{
+  position: relative;
+  width: 260px;
+  height: 190px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-container .card .imgBxAcme-Planner{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 200px;
+}
+
+.card-container .card .imgBxHeuristicas{
+  position: relative;
+  width: 260px;
+  height: 240px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-container .card .imgBx img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card-container .card .imgBxCircle img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card-container .card .imgBxPetClinic img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card-container .card .imgBxAcme-Planner img{
+  margin-left: -46px;
+  width: 135%;
+  border-radius: 5px;
+}
+
+.card-container .card .imgBxHeuristicas img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card-container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: left;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card-container .card .content h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.card-container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -50px;
+  transition-delay: 0.3s;
+}
+
+.card-buttons button{ 
+  width: 46%;
+}
+
+.container {
+  height: 100vh;
+}
+.container img {
+  width: 100%;
+  position: absolute;
+  height: 110vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.projects-content {
+  width: 100%;
+  background: white;
+  min-height: 110vh;
+  z-index: 2;
+  position: absolute;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.content-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 75vh;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.content-cards2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  margin-bottom:100px;
+}
+
+.contacme:hover{
+  border-bottom: #7ca5c0 solid 2px;
+}
+
+.contactme-section{
+  margin-top: 570px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #7ca5c0;
+}
+
+.contactme-section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #d2dfe9;
+}
+
+.contactme-section .contactme-container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+.contactme-section .contactme-container .contactinfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #7ca5c0;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactme-section .contactme-container .contactinfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 5250;
+}
+
+.contactme-section .contactme-container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+}
+
+.contactme-section .contactme-container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.contactme-section .contactme-container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+.contactme-section .contactme-container .contactinfo .info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.8;
+}
+
+.contactme-section .contactme-container .contactinfo .info li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-size: 13.5px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.contactme-section .contactme-container .contactinfo .info li:hover span:nth-child(1) img,
+.contactme-section .contactme-container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+}
+
+.contactme-section .contactme-container .contactinfo .sci{
+    position: relative;
+    display: flex;
+    width: 38%;
+}
+
+.contactme-section .contactme-container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.contactme-section .contactme-container .contactinfo .sci li a{
+    text-decoration: none;
+}
+
+.contactme-section .contactme-container .contactinfo .sci li a img{
+    filter: invert(1);  
+    opacity: 0.8;
+    max-width: 100%;
+}
+
+.contactme-section .contactme-container .contactinfo .sci li:hover a img{
+    opacity: 1;
+}
+
+.contactme-section .contactme-container .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contactme-section .contactme-container .contactForm h2{
+    color: #7ca5c0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contactme-section .contactme-container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox input,
+.contactme-section .contactme-container .contactForm .formBox .inputBox textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox textarea{
+    min-height: 120px;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox input:focus ~ span,
+.contactme-section .contactme-container .contactForm .formBox .inputBox textarea:focus ~ span,
+.contactme-section .contactme-container .contactForm .formBox .inputBox input:valid ~ span,
+.contactme-section .contactme-container .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #7ca5c0;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+.contactme-section .contactme-container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: #ff568c;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/gIcon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css"/>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&display=swap" rel="stylesheet"> -->
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <nav>
+                <div class="logo">
+                    <h4 class="logo-text">Gonzalo Rodriguez Terron</h4>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#projects-section">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="contacme" href="#contactme" onclick="contactMeVisible()">Contact me!</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gonrodter" target="_blank"><i class="github icon"></i></a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <div class="container">
+                <h2 class="big-text">Personal Portfolio</h2>
+                <img src="images/bg1.png" class="bg1" alt="" />
+                <img src="images/pencil.png" class="pencil" alt="" />
+                <img src="images/notebook1.png" class="notebook" alt="" />
+                <img src="images/cup.png" class="cup" alt="" />
+            </div>
+            <div id="projects-section" class="projects-content">
+                <div class="content-cards">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="images/futball2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>Futball</h2>
+                                <p>This project was developed in the subject AISS in the second year of degree</p>
+                                <div class="card-buttons">
+                                    <a href="https://github.com/gonrodter" target="_blank">
+                                        <button class="ui github button">
+                                        <i class="github icon"></i>
+                                        GitHub
+                                        </button>
+                                    </a>
+                                    <button class="ui github button">
+                                        <i class="globe icon"></i>
+                                        Web
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="images/bar.png" alt="">
+                            </div>
+                            
+                            <div class="content">
+                                <h2>Bar la Campiña</h2>
+                                <p>This project was developed in the subject ISSI in the second year of degree</p>
+                                <div class="card-buttons">
+                                    <a href="https://github.com/gonrodter" target="_blank">
+                                        <button class="ui github button">
+                                        <i class="github icon"></i>
+                                        GitHub
+                                        </button>
+                                    </a>
+                                    <button class="ui github button">
+                                        <i class="globe icon"></i>
+                                        Web
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="images/petclinic7.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>PetClinic</h2>
+                                <p>This project was developed in the subject PSG-II in the third year of degree</p>
+                                <div class="card-buttons">
+                                    <a href="https://github.com/gonrodter" target="_blank">
+                                        <button class="ui github button">
+                                        <i class="github icon"></i>
+                                        GitHub
+                                        </button>
+                                    </a>
+                                    <button class="ui github button">
+                                        <i class="globe icon"></i>
+                                        Web
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-cards2">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="imgBxAcme-Planner">
+                                <img src="images/Acme-Planner.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>Acme-Planner</h2>
+                                <p>This project was developed in the subject DP-II in the third year of degree</p>
+                                <div class="card-buttons">
+                                    <a href="https://github.com/gonrodter/Acme-Planner" target="_blank">
+                                        <button class="ui github button">
+                                        <i class="github icon"></i>
+                                        GitHub
+                                        </button>
+                                    </a>
+                                    <button class="ui github button">
+                                        <i class="globe icon"></i>
+                                        Web
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="imgBxCircle">
+                                <img src="images/currogas.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h2>CurroGas</h2>
+                                <p>This project was developed in the subject DP in the third year of degree</p>
+                                <div class="card-buttons">
+                                    <a href="https://github.com/gonrodter" target="_blank">
+                                        <button class="ui github button">
+                                        <i class="github icon"></i>
+                                        GitHub
+                                        </button>
+                                    </a>
+                                    <button class="ui github button">
+                                        <i class="globe icon"></i>
+                                        Web
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="imgBxHeuristicas">
+                                <img src="images/pythonn.jpg" alt="">
+                            </div>
+                            
+                            <div class="content">
+                                <h2>PDDL Heuristics</h2>
+                                <p>This project was developed in the subject ISSI in the second year of degree</p>
+                                <div class="card-buttons">
+                                    <a href="https://github.com/gonrodter/Heuristicas_sobre_PDDL" target="_blank">
+                                        <button class="ui github button">
+                                        <i class="github icon"></i>
+                                        GitHub
+                                        </button>
+                                    </a>
+                                    <button class="ui github button">
+                                        <i class="globe icon"></i>
+                                        Web
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactme" style="display: none;" class="contactme-section">
+            <div class="contactme-container">
+                <div class="contactinfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="images/location.png" alt=""></span>
+                                <span>41940 Calle Estacada del Rosario<br>
+                                    Tomares, Sevilla</span>
+                            </li>
+                            <li>
+                                <span><img src="images/mail.png" alt=""></span>
+                                <span>rodriguez.terron.gonzalo@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><img src="images/call.png" alt=""></span>
+                                <span>640583966</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="https://www.linkedin.com/in/gonzalo-rodr%C3%ADguez-terr%C3%B3n-a3625b209/" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
+                        <li><a href="https://github.com/gonrodter" target="_blank"><img src="images/github.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="contactForm">
+                    <h2>Send a message</h2>
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="" required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">My portfolio</span>
+            </h1>
+            <h4 class="hide">
+                <span class="text">by Gonzalo</span>
+            </h4>
+
+        </div>
+    </div>
+    <div class="slider"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
