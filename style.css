@@ -12,14 +12,14 @@ html{
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 18px;
+  font-size: 24px;
 }
 .big-text {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
-  font-size: 5rem;
+  font-size: 7rem;
   font-family: "Poppins", sans-serif;
   color: white;
 }
@@ -39,7 +39,7 @@ html{
 .intro-text {
   color: #7ca5c0;
   font-family: "Heebo", sans-serif;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .slider {
@@ -57,7 +57,7 @@ html{
   overflow: hidden;
   color: #7ca5c0;
   font-family: "Heebo", sans-serif;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 .intro-text h4{
@@ -105,7 +105,12 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+#navbarIcon{
+  padding-left: 10px;
 }
 
 .burger {
@@ -127,6 +132,10 @@ nav {
   }
   .logo-text{
     padding-left: 20px;
+    padding-right: 10px;
+  }
+  .nav-links a{
+    margin-right: 15px;
   }
 }
 
@@ -150,6 +159,7 @@ nav {
   .nav-links li {
     opacity: 0;
   }
+
   .burger {
     display: block;
   }
@@ -394,6 +404,8 @@ nav {
 
 .contactme-section .contactme-container{
     position: relative;
+    /* margin-top: 900px;
+    margin-bottom: 200px; */
     min-width: 1100px;
     min-height: 550px;
     display: flex;

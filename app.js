@@ -60,5 +60,5 @@ let scene = new ScrollMagic.Scene({
 
 function contactMeVisible() {
   var T = document.getElementById("contactme");
-  T.style.display = "flex";  // <-- Set it to block
+  T.style.display = "flex";
 }
