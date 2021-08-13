@@ -62,3 +62,34 @@ function contactMeVisible() {
   var T = document.getElementById("contactme");
   T.style.display = "flex";
 }
+
+document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+function submitForm(e){
+  e.preventDefault();
+
+  let name = document.querySelector(".form-name").value;
+  let lastname = document.querySelector(".form-lastname").value;
+  let fullname = name.concat(" ", lastname);
+  let email = document.querySelector(".form-email").value;
+  let phone = document.querySelector(".form-phone").value;
+  let message = document.querySelector(".form-message").value;
+
+
+  document.querySelector(".contact-form").reset();
+
+  sendEmail(fullname, email, phone, message);
+}
+
+function sendEmail(fullname, email, phone, message){
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: 'rodriguez.terron.gonzalo@gmail.com',
+    Password: "xesmtvajpspqkfrr",
+    To: 'rodriguez.terron.gonzalo@gmail.com',
+    From: 'rodriguez.terron.gonzalo@gmail.com',
+    Subject: `${fullname} sent you a message`,
+    Body: `Name 🙋‍♂️: ${fullname} <br/> Email 📩: ${email} <br/> Phone 📞: ${phone} <br/> Message 📝: ${message}`,
+  }).then((message) => alert("Mail sent successfully!"));
+}
+

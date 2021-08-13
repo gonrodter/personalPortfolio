@@ -218,27 +218,27 @@
                     </ul>
                 </div>
                 <div class="contactForm">
-                    <form action="contact-form-handler.php" method="POST">
+                    <form class="contact-form" method="POST">
                         <h2>Send a message</h2>
                         <div class="formBox">
                             <div class="inputBox w50">
-                                <input type="text" name="name" required>
+                                <input class="form-name" type="text" name="" required>
                                 <span>First Name</span>
                             </div>
                             <div class="inputBox w50">
-                                <input type="text" name="lastname" required>
+                                <input class="form-lastname" type="text" name="" required>
                                     <span>Last Name</span>
                             </div>
                             <div class="inputBox w50">
-                                <input type="email" name="email" required>
+                                <input class="form-email" type="email" name="" required>
                                 <span>Email Address</span>
                             </div>
                             <div class="inputBox w50">
-                                <input type="tel" name="phone" required>
+                                <input class="form-phone" type="tel" name="" required>
                                 <span>Mobile Number</span>
                             </div>
                             <div class="inputBox w100">
-                                <textarea name="message" required></textarea>
+                                <textarea class="form-message" name="" required></textarea>
                                 <span>Write your message here...</span>
                             </div>
                             <div class="inputBox w100">
@@ -273,6 +273,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./app.js"></script>
 </body>
 
