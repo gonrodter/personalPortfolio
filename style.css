@@ -399,7 +399,7 @@ font-size: 1.3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 75vh;
+  min-height: 80vh;
   text-align: center;
   margin-top: 100px;
 }
@@ -425,7 +425,7 @@ font-size: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 95vh;
   background: #7ca5c0;
 }
 
@@ -628,7 +628,7 @@ font-size: 1.3rem;
 .about{
   width: 100%;
   background: white;
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
   color: #7ca5c0;
   margin-top: 520px;
