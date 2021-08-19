@@ -93,3 +93,6 @@ function sendEmail(fullname, email, phone, message){
   }).then((message) => alert("Mail sent successfully!"));
 }
 
+function showMessageNotHosted(){
+  alert("Website not hosted yet!");
+}
