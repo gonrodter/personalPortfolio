@@ -36,26 +36,26 @@ const navSlide = () => {
 
 navSlide();
 
-let controller = new ScrollMagic.Controller();
-let timeline = new TimelineMax();
+// let controller = new ScrollMagic.Controller();
+// let timeline = new TimelineMax();
 
-timeline
-  .to(".cup", 8, { y: -300 })
-  .to(".pencil", 8, { x: -250 }, "-=8")
-  .to(".notebook", 8, { y: -375 }, "-=8")
-  .to(".big-text", 8, { x: 375 }, "-=8")
-  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 8 }, "-=8")
-  .to(".projects-content", 10, { top: "0%" }, "-=8")
-  .fromTo(".content-cards", { opacity: 0 }, { opacity: 1, duration: 1.5 })
+// timeline
+//   .to(".cup", 8, { y: -300 })
+//   .to(".pencil", 8, { x: -250 }, "-=8")
+//   .to(".notebook", 8, { y: -375 }, "-=8")
+//   .to(".big-text", 8, { x: 375 }, "-=8")
+//   .fromTo(".bg1", { y: -50 }, { y: 0, duration: 8 }, "-=8")
+//   .to(".projects-content", 10, { top: "0%" }, "-=8")
+//   .fromTo(".content-cards", { opacity: 0 }, { opacity: 1, duration: 1.5 })
 
-let scene = new ScrollMagic.Scene({
-  triggerElement: "section",
-  duration: "240%",
-  triggerHook: 0,
-})
-  .setTween(timeline)
-  .setPin("section")
-  .addTo(controller);
+// let scene = new ScrollMagic.Scene({
+//   triggerElement: "section",
+//   duration: "240%",
+//   triggerHook: 0,
+// })
+//   .setTween(timeline)
+//   .setPin("section")
+//   .addTo(controller);
 
 
 function contactMeVisible() {
@@ -85,7 +85,7 @@ function sendEmail(fullname, email, phone, message){
   Email.send({
     Host: "smtp.gmail.com",
     Username: 'rodriguez.terron.gonzalo@gmail.com',
-    Password: "xesmtvajpspqkfrr",
+    Password: "qcjscnolpoihcgly",
     To: 'rodriguez.terron.gonzalo@gmail.com',
     From: 'rodriguez.terron.gonzalo@gmail.com',
     Subject: `${fullname} sent you a message`,
